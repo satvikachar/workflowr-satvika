@@ -9,3 +9,5 @@ editor_options:
 ---
 
 Welcome to my research website.
+- [Getting started](01-getting-started.html)
+
