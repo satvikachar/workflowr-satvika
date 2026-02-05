@@ -437,15 +437,15 @@ results.</p>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomsatvikacharworkflowrsatvikatree5b4af5b0bf4c68127f1c3e023f6f85cd575a1b90targetblank5b4af5ba">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomsatvikacharworkflowrsatvikatree62219d52b2cda807bcde2f85a7fe1fd9d88bd1a0targetblank62219d5a">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/satvikachar/workflowr-satvika/tree/5b4af5b0bf4c68127f1c3e023f6f85cd575a1b90" target="_blank">5b4af5b</a>
+<a href="https://github.com/satvikachar/workflowr-satvika/tree/62219d52b2cda807bcde2f85a7fe1fd9d88bd1a0" target="_blank">62219d5</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomsatvikacharworkflowrsatvikatree5b4af5b0bf4c68127f1c3e023f6f85cd575a1b90targetblank5b4af5ba"
+id="strongRepositoryversionstrongahrefhttpsgithubcomsatvikacharworkflowrsatvikatree62219d52b2cda807bcde2f85a7fe1fd9d88bd1a0targetblank62219d5a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -455,7 +455,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/satvikachar/workflowr-satvika/tree/5b4af5b0bf4c68127f1c3e023f6f85cd575a1b90" target="_blank">5b4af5b</a>.
+<a href="https://github.com/satvikachar/workflowr-satvika/tree/62219d52b2cda807bcde2f85a7fe1fd9d88bd1a0" target="_blank">62219d5</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -519,6 +519,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/satvikachar/workflowr-satvika/blob/62219d52b2cda807bcde2f85a7fe1fd9d88bd1a0/analysis/01-getting-started.Rmd" target="_blank">62219d5</a>
+</td>
+<td>
+Satvika Char
+</td>
+<td>
+2026-02-04
+</td>
+<td>
+update
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/satvikachar/workflowr-satvika/2801fcccceedb0f2586e802223a9ce9b7384f5cd/docs/01-getting-started.html" target="_blank">2801fcc</a>
+</td>
+<td>
+Satvika Char
+</td>
+<td>
+2026-02-04
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -665,26 +699,18 @@ Add initial analysis page
 <p>The data I plan to use this semester is part of a research study that
 looks at using virtual reality to boost self-compassion in college
 students as a single session intervention.</p>
-<pre><code>library(workflowr)
-getwd()
-
-data &lt;- read.csv(&quot;data/WB_EQOSOGI.csv&quot;)
-
-list.files(&quot;data&quot;)
-list.files(&quot;analysis&quot;)
-summary(data)
-</code></pre>
-<pre><code>wflow_build(&quot;analysis/01-getting-started.Rmd&quot;) # build only one script
-wflow_build() # build the whole site
-wflow_status() # check the build status
-
-wflow_publish(c(&quot;analysis/index.Rmd&quot;, &quot;analysis/about.Rmd&quot;, &quot;analysis/license.Rmd&quot;),
-              message = &quot;Publish initial site pages&quot;)
-
-wflow_publish(&quot;analysis/01-getting-started.Rmd&quot;, message = &quot;update&quot;) # committing your work to the repository
-
-wflow_git_push()
-wflow_git_push(set_upstream = TRUE)</code></pre>
+<p>library(workflowr) getwd()</p>
+<p>data &lt;- read.csv(“data/WB_EQOSOGI.csv”) list.files(“data”)
+list.files(“analysis”)</p>
+<p>summary(data)</p>
+<p>wflow_build(“analysis/01-getting-started.Rmd”) # build only one
+script wflow_build() # build the whole site wflow_status() # check the
+build status</p>
+<p>wflow_publish(c(“analysis/index.Rmd”, “analysis/about.Rmd”,
+“analysis/license.Rmd”), message = “Publish initial site pages”)</p>
+<p>wflow_publish(“analysis/01-getting-started.Rmd”, message = “update”)
+# committing your work to the repository</p>
+<p>wflow_git_push() wflow_git_push(set_upstream = TRUE)</p>
 </div>
 </div>
 </div>
