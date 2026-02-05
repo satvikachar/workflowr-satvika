@@ -12,7 +12,7 @@ navbar:
   right:
   - icon: fab fa-github
     text: Source code
-    href: https://github.com/Satvika/workflowr-satvika
+    href: https://github.com/satvikachar/workflowr-satvika
 output:
   workflowr::wflow_html:
     toc: yes
