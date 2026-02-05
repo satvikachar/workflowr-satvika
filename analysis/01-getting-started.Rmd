@@ -5,6 +5,8 @@ date: "2026-01-29"
 output: pdf_document
 ---
 
+The data I plan to use this semester is part of a research study that looks at using virtual reality to boost self-compassion in college students as a single session intervention. 
+
 ```
 library(workflowr)
 getwd()
@@ -30,3 +32,5 @@ wflow_publish("analysis/01-getting-started.Rmd", message = "update") # committin
 wflow_git_push()
 wflow_git_push(set_upstream = TRUE)
 ```
+
+
