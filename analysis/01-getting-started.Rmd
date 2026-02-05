@@ -7,19 +7,20 @@ output: pdf_document
 
 The data I plan to use this semester is part of a research study that looks at using virtual reality to boost self-compassion in college students as a single session intervention. 
 
-```
+
 library(workflowr)
 getwd()
 
 data <- read.csv("data/WB_EQOSOGI.csv")
-
 list.files("data")
 list.files("analysis")
+
+
+
 summary(data)
 
-```
 
-```
+
 wflow_build("analysis/01-getting-started.Rmd") # build only one script
 wflow_build() # build the whole site
 wflow_status() # check the build status
@@ -31,6 +32,6 @@ wflow_publish("analysis/01-getting-started.Rmd", message = "update") # committin
 
 wflow_git_push()
 wflow_git_push(set_upstream = TRUE)
-```
+
 
 
